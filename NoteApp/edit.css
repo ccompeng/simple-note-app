@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #EF629F 0%, #EECDA3 100%);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 480px;
+    max-width: 98%;
+}
+
+.container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    padding: 6px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.container form #editNote {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 16px;
+    color: black;
+}
+
+.container form #edit {
+    background-color: #EF629F;
+    border: none;
+    width: 64px;
+    height: 100%;
+    border-radius: 6px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #EECDA3;
+    transition: transform 200ms ease;
+}
+
+/***********  RESPONSE  *********/
+
+@media only screen and (min-width: 500px) {
+    .container {
+        left: calc(100% - 1000px);
+    }
+}
